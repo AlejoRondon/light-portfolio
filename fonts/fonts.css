@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Posterama2001W04-Black';
+  src: url('Posterama2001W04-Black.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-Black.woff') format('woff'), url('Posterama2001W04-Black.ttf') format('truetype'),
+    url('Posterama2001W04-Black.svg#Posterama2001W04-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-Bold';
+  src: url('Posterama2001W04-Bold.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-Bold.woff') format('woff'), url('Posterama2001W04-Bold.ttf') format('truetype'), url('Posterama2001W04-Bold.svg#Posterama2001W04-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-Light';
+  src: url('Posterama2001W04-Light.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-Light.woff') format('woff'), url('Posterama2001W04-Light.ttf') format('truetype'),
+    url('Posterama2001W04-Light.svg#Posterama2001W04-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-Regular';
+  src: url('Posterama2001W04-Regular.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-Regular.woff') format('woff'), url('Posterama2001W04-Regular.ttf') format('truetype'),
+    url('Posterama2001W04-Regular.svg#Posterama2001W04-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-SemiBold';
+  src: url('Posterama2001W04-SemiBold.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-SemiBold.woff') format('woff'), url('Posterama2001W04-SemiBold.ttf') format('truetype'),
+    url('Posterama2001W04-SemiBold.svg#Posterama2001W04-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-Thin';
+  src: url('Posterama2001W04-Thin.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-Thin.woff') format('woff'), url('Posterama2001W04-Thin.ttf') format('truetype'), url('Posterama2001W04-Thin.svg#Posterama2001W04-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Posterama2001W04-UltraBlack';
+  src: url('Posterama2001W04-UltraBlack.eot?#iefix') format('embedded-opentype'), url('Posterama2001W04-UltraBlack.woff') format('woff'), url('Posterama2001W04-UltraBlack.ttf') format('truetype'),
+    url('Posterama2001W04-UltraBlack.svg#Posterama2001W04-UltraBlack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
