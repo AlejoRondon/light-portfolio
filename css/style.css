@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #ececec;
+  background: radial-gradient(circle, #ececec, #0a3a9c);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.main-container {
+  position: relative;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+  /* Flexbox properties*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .content-wrapper .logo-wrapper {
+}
+.main-container .content-wrapper .logo-wrapper h1.logo-gretting {
+  color: rgb(235, 114, 23);
+  font-family: 'Posterama2001W04-SemiBold';
+  font-size: 40pt;
+}
+.main-container .content-wrapper .logo-wrapper #logo-img {
+  /* position: absolute; */
+  width: 370px;
+  height: auto;
+}
+.main-container .content-wrapper h2 {
+  color: rgb(30, 97, 139);
+  font-family: 'Posterama2001W04-Regular';
+  margin: 5px 0 !important;
+  text-align: center;
+}
+a.download {
+  color: rgb(255, 169, 56);
+  font-family: 'Posterama2001W04-bold';
+  font-size: 1.3em;
+  transition: font;
+  transition: font-size ease 1s;
+}
+a.download:hover {
+  font-size: 1.4em;
+}
+
+/*-> Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .main-container .content-wrapper .logo-wrapper {
+  }
+  .main-container .content-wrapper .logo-wrapper h1.logo-gretting {
+    color: rgb(235, 114, 23);
+    font-family: 'Posterama2001W04-SemiBold';
+    font-size: 21pt;
+  }
+  .main-container .content-wrapper .logo-wrapper #logo-img {
+    /* position: absolute; */
+    width: 200px;
+    height: auto;
+  }
+  .main-container .content-wrapper h2 {
+    color: rgb(30, 97, 139);
+    font-family: 'Posterama2001W04-Regular';
+    font-size: 20px;
+    margin: 5px 0 !important;
+  }
+  a.download {
+    color: rgb(255, 169, 56);
+    font-family: 'Posterama2001W04-bold';
+    font-size: 1.2em;
+    transition: font;
+    transition: font-size ease 1s;
+  }
+  a.download:hover {
+    font-size: 1.3em;
+  }
+}
