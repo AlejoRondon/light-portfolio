@@ -1,6 +1,5 @@
-//ParticlesBG
 particlesJS(
-  'particles-js',
+  'particles-js-background',
   {
     particles: {
       number: { value: 50 },

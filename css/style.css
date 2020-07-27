@@ -1,3 +1,14 @@
+:root {
+  /* Alejo's color palette */
+  --alejo-palette-DarkBlue: rgba(4, 17, 61);
+  --alejo-palette-Blue: rgba(30, 97, 139);
+  --alejo-palette-LightBlue: rgba(2, 186, 214);
+  --alejo-palette-Orange: rgba(235, 114, 23);
+  --alejo-palette-LightOrange: rgba(255, 169, 56);
+  --logo-gretting-color: var(--alejo-palette-Orange);
+  --entry-color: var(--alejo-palette-Blue);
+  --download-link-color: var(--alejo-palette-LightOrange);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,18 +21,17 @@ body {
 }
 
 body {
-  background-color: #ececec;
-  background: radial-gradient(circle, #ececec, #0a3a9c);
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
-#particles-js {
+#particles-js-background {
+  background: radial-gradient(circle, #ececec, #0a3a9c);
   position: absolute;
   width: 100vw;
   height: 100vh;
 }
-.main-container {
+.header-container {
   position: relative;
   width: 90vw;
   height: 100vh;
@@ -31,34 +41,61 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main-container .content-wrapper {
+.header-container .content-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.main-container .content-wrapper .logo-wrapper {
+.header-container .content-wrapper .logo-wrapper {
 }
-.main-container .content-wrapper .logo-wrapper h1.logo-gretting {
-  color: rgb(235, 114, 23);
+.header-container .content-wrapper .logo-wrapper h1.logo-gretting {
+  color: var(--logo-gretting-color);
   font-family: 'Posterama2001W04-SemiBold';
-  font-size: 40pt;
+  font-size: 3.3em;
 }
-.main-container .content-wrapper .logo-wrapper #logo-img {
-  /* position: absolute; */
+.header-container .content-wrapper .logo-wrapper #logo-img {
   width: 370px;
   height: auto;
 }
-.main-container .content-wrapper h2 {
-  color: rgb(30, 97, 139);
+
+.header-container .content-wrapper h2.entry-text {
+  color: var(--entry-color);
   font-family: 'Posterama2001W04-Regular';
   margin: 5px 0 !important;
   text-align: center;
+  font-size: 1.5em;
 }
+
+.header-container .content-wrapper .cv-summary {
+  color: var(--alejo-palette-DarkBlue);
+  text-align: left;
+  font-size: 1.4em;
+  max-width: 640px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: max-height ease-out 0.3s, opacity ease 0.5s, margin linear 0.5s, padding linear 0.5s;
+}
+.header-container .content-wrapper .cv-summary.show {
+  max-height: 300px;
+  overflow: scroll;
+  display: block;
+  opacity: 1;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+  transition: max-height ease-in 0.5s, opacity ease 0.5s, margin linear 0.5s, padding linear 0.5s;
+
+  border-top: var(--alejo-palette-LightBlue) 2px solid;
+  border-bottom: var(--alejo-palette-LightBlue) 2px solid;
+
+  /* visibility: hidden; */
+}
+
 a.download {
-  color: rgb(255, 169, 56);
+  color: var(--download-link-color);
   font-family: 'Posterama2001W04-bold';
   font-size: 1.3em;
-  transition: font;
   transition: font-size ease 1s;
 }
 a.download:hover {
@@ -67,32 +104,48 @@ a.download:hover {
 
 /*-> Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .main-container .content-wrapper .logo-wrapper {
+  .header-container .content-wrapper .logo-wrapper {
   }
-  .main-container .content-wrapper .logo-wrapper h1.logo-gretting {
-    color: rgb(235, 114, 23);
-    font-family: 'Posterama2001W04-SemiBold';
-    font-size: 21pt;
+  .header-container .content-wrapper .logo-wrapper h1.logo-gretting {
+    font-size: 1.8em;
   }
-  .main-container .content-wrapper .logo-wrapper #logo-img {
-    /* position: absolute; */
+  .header-container .content-wrapper .logo-wrapper #logo-img {
     width: 200px;
-    height: auto;
   }
-  .main-container .content-wrapper h2 {
-    color: rgb(30, 97, 139);
-    font-family: 'Posterama2001W04-Regular';
-    font-size: 20px;
-    margin: 5px 0 !important;
+  .header-container .content-wrapper h2.entry-text {
+    font-size: 1.2em;
+  }
+  .header-container .content-wrapper .cv-summary {
+    color: var(--alejo-palette-DarkBlue);
+    text-align: left;
+    font-size: 1em;
+    max-width: 640px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height ease-out 0.3s, opacity ease 0.5s, margin linear 0.5s, padding linear 0.5s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    /* visibility: hidden; */
+  }
+  .header-container .content-wrapper .cv-summary.show {
+    max-height: 300px;
+    overflow: scroll;
+    display: block;
+    opacity: 1;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    transition: max-height ease-in 0.5s, opacity ease 0.5s, margin linear 0.5s, padding linear 0.5s;
+
+    border-top: var(--alejo-palette-LightBlue) 2px solid;
+    border-bottom: var(--alejo-palette-LightBlue) 2px solid;
+
+    /* visibility: hidden; */
   }
   a.download {
-    color: rgb(255, 169, 56);
-    font-family: 'Posterama2001W04-bold';
-    font-size: 1.2em;
-    transition: font;
-    transition: font-size ease 1s;
+    font-size: 1em;
   }
   a.download:hover {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 }
